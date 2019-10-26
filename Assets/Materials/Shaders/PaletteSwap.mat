@@ -1,0 +1,56 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: PaletteSwap
+  m_Shader: {fileID: 4800000, guid: 6922d92af77788d419294de2dfe367c8, type: 3}
+  m_ShaderKeywords: ETC1_EXTERNAL_ALPHA
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _MainTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _PaletteTex:
+        m_Texture: {fileID: 2800000, guid: a7d7b147b1d462842b862df0add004d1, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats: []
+    m_Colors:
+    - _Colour0: {r: 1, g: 1, b: 1, a: 1}
+    - _Colour0Alt: {r: 1, g: 1, b: 1, a: 1}
+    - _Colour1: {r: 1, g: 1, b: 1, a: 1}
+    - _Colour10: {r: 1, g: 1, b: 1, a: 1}
+    - _Colour11: {r: 1, g: 1, b: 1, a: 1}
+    - _Colour12: {r: 1, g: 1, b: 1, a: 1}
+    - _Colour13: {r: 1, g: 1, b: 1, a: 1}
+    - _Colour14: {r: 1, g: 1, b: 1, a: 1}
+    - _Colour15: {r: 1, g: 1, b: 1, a: 1}
+    - _Colour16: {r: 1, g: 1, b: 1, a: 1}
+    - _Colour1Alt: {r: 1, g: 1, b: 1, a: 1}
+    - _Colour2: {r: 1, g: 1, b: 1, a: 1}
+    - _Colour2Alt: {r: 1, g: 1, b: 1, a: 1}
+    - _Colour3: {r: 1, g: 1, b: 1, a: 1}
+    - _Colour3Alt: {r: 1, g: 1, b: 1, a: 1}
+    - _Colour4: {r: 1, g: 1, b: 1, a: 1}
+    - _Colour4Alt: {r: 1, g: 1, b: 1, a: 1}
+    - _Colour5: {r: 1, g: 1, b: 1, a: 1}
+    - _Colour5Alt: {r: 1, g: 1, b: 1, a: 1}
+    - _Colour6: {r: 1, g: 1, b: 1, a: 1}
+    - _Colour6Alt: {r: 1, g: 1, b: 1, a: 1}
+    - _Colour7: {r: 1, g: 1, b: 1, a: 1}
+    - _Colour7Alt: {r: 1, g: 1, b: 1, a: 1}
+    - _Colour8: {r: 1, g: 1, b: 1, a: 1}
+    - _Colour9: {r: 1, g: 1, b: 1, a: 1}

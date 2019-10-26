@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c7e52f2a-e99f-4e70-bace-ca0f8fb17ffe" name="Default Changelist" comment="" />
@@ -14,13 +14,22 @@
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Player/CollisionManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Player/CollisionCheck.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/PaletteSwap/PaletteSwapTexture.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Player/PlayerMovement.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Player/PlayerAnimation.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Materials/Shaders/PaletteSwap.shader" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/PaletteSwap/PaletteSwapLookup.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/Assets/Scripts/Player/CollisionManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Player/CollisionCheck.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Player/PlayerAnimation.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/PaletteSwap/PaletteSwapLookup.cs" />
+        <option value="$PROJECT_DIR$/Assets/Materials/Shaders/Sprites-Default.shader" />
+        <option value="$PROJECT_DIR$/Assets/Materials/Shaders/PaletteSwap.shader" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/PaletteSwap/PaletteSwapTexture.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Player/PlayerMovement.cs" />
       </list>
     </option>
@@ -72,6 +81,8 @@
       <option name="presentableId" value="Default" />
       <updated>1572028239418</updated>
       <workItem from="1572028243060" duration="7330000" />
+      <workItem from="1572043948572" duration="8154000" />
+      <workItem from="1572088079511" duration="1142000" />
     </task>
     <servers />
   </component>
@@ -85,7 +96,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>

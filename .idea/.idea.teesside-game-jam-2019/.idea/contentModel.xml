@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ContentModelStore">
     <e p="C:\Users\w9090803\.Rider2019.2\system\extResources" t="IncludeRecursive" />
@@ -6,10 +6,20 @@
     <e p="C:\Users\w9090803\Source\teesside-game-jam-2019" t="IncludeRecursive">
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
+        <e p="Materials" t="Include">
+          <e p="Shaders" t="Include">
+            <e p="PaletteSwap.shader" t="Include" />
+          </e>
+        </e>
         <e p="Scripts" t="Include">
+          <e p="PaletteSwap" t="Include">
+            <e p="PaletteSwapLookup.cs" t="Include" />
+            <e p="PaletteSwapTexture.cs" t="Include" />
+          </e>
           <e p="Player" t="Include">
             <e p="CollisionCheck.cs" t="Include" />
             <e p="CollisionManager.cs" t="Include" />
+            <e p="PlayerAnimation.cs" t="Include" />
             <e p="PlayerMovement.cs" t="Include" />
           </e>
         </e>
