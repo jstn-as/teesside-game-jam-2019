@@ -12,6 +12,12 @@ namespace Light
         [SerializeField] private AnimationCurve _scaleChangeCurve;
         [SerializeField] private Sprite _maskSprite;
         [SerializeField] private List<SpriteMask> _spriteMasks;
+
+        public float GetLightRadius()
+        {
+            var dropOff = _scaleChangeCurve.Evaluate(_layerCount);
+            return _baseScaleBounds.y + dropOff;
+        } 
         private void Awake()
         {
             // Create the sprite masks.

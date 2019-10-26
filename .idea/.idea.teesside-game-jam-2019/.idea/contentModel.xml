@@ -16,6 +16,7 @@
             <e p="Direction.cs" t="Include" />
             <e p="LightSource.cs" t="Include" />
             <e p="LineGenerator.cs" t="Include" />
+            <e p="ModifyMEsh.cs" t="Include" />
             <e p="Shadows.cs" t="Include" />
             <e p="Wall.cs" t="Include" />
           </e>
