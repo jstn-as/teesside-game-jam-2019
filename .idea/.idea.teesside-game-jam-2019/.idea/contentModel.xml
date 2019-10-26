@@ -12,6 +12,13 @@
           </e>
         </e>
         <e p="Scripts" t="Include">
+          <e p="Light" t="Include">
+            <e p="Direction.cs" t="Include" />
+            <e p="LightSource.cs" t="Include" />
+            <e p="LineGenerator.cs" t="Include" />
+            <e p="Shadows.cs" t="Include" />
+            <e p="Wall.cs" t="Include" />
+          </e>
           <e p="PaletteSwap" t="Include">
             <e p="PaletteSwapLookup.cs" t="Include" />
             <e p="PaletteSwapTexture.cs" t="Include" />
