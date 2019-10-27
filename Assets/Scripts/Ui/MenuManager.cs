@@ -1,6 +1,7 @@
 ﻿using System;
 using UnityEngine;
 using UnityEngine.EventSystems;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 namespace Ui
@@ -28,7 +29,11 @@ namespace Ui
         private void SetupNavigation(GameObject panel)
         {
             var selectables = panel.GetComponentsInChildren<Selectable>();
+            // Set the default menu.
+            _defaultSelectable = selectables[0].gameObject;
+            _eventSystem.SetSelectedGameObject(_defaultSelectable);
             // Setup the navigation for each object.
+            if (selectables.Length < 2) return;
             for (var i = 0; i < selectables.Length; i++)
             {
                 var navigation = selectables[i].navigation;
@@ -37,9 +42,6 @@ namespace Ui
                 navigation.selectOnDown = i == selectables.Length - 1 ? selectables[0] : selectables[i + 1];
                 selectables[i].navigation = navigation;
             }
-            // Set the default menu.
-            _defaultSelectable = selectables[0].gameObject;
-            _eventSystem.SetSelectedGameObject(_defaultSelectable);
         }
 
         private void Update()
@@ -49,6 +51,16 @@ namespace Ui
             {
                 _eventSystem.SetSelectedGameObject(_defaultSelectable);
             }
+        }
+
+        public void LoadScene(int sceneIndex)
+        {
+            SceneManager.LoadScene(sceneIndex);
+        }
+
+        public void ExitGame()
+        {
+            Application.Quit();
         }
     }
 }

@@ -22,12 +22,15 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/PaletteSwap/PaletteSwapLookup.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Light/LineGenerator.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/RandomSprite.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Ui/HealthDisplay.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/WhoWon.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Light/LightSource.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Spawners/ItemSpawner.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/MouseDisable.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Light/Shadows.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Materials/Shaders/PaletteSwap.shader" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/TransformShake.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Ui/WinnerDisplay.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Player/CollisionManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Light/LightableObject.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Player/CollisionCheck.cs" root0="FORCE_HIGHLIGHTING" />
@@ -40,13 +43,13 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Player/PlayerHealth.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Player/PlayerMovement.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Player/PlayerAction.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/ActivePalette.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/Assets/Scripts/Player/CollisionManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Player/PlayerAnimation.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/PaletteSwap/PaletteSwapLookup.cs" />
         <option value="$PROJECT_DIR$/Assets/Materials/Shaders/Sprites-Default.shader" />
         <option value="$PROJECT_DIR$/Assets/Materials/Shaders/PaletteSwap.shader" />
         <option value="$PROJECT_DIR$/Assets/Scripts/PaletteSwap/PaletteSwapTexture.cs" />
@@ -66,21 +69,26 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/CameraShake.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/TransformShake.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Projectile/Flame.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Player/PlayerHealth.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Singleton.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/MouseDisable.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Ui/MenuManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Player/CollisionCheck.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Player/PlayerSpawner.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/ItemSpawner.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Spawners/PlayerSpawner.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Projectile/Projectile.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Spawners/Spawner.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Spawners/ItemSpawner.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Light/LightableObject.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Light/DarknessLayers.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Light/LightSource.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Light/LineGenerator.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Projectile/Projectile.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Spawners/PlayerSpawner.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Ui/MenuManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/WhoWon.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Ui/HealthDisplay.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Player/PlayerHealth.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Ui/WinnerDisplay.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/PaletteSwap/PaletteSwapLookup.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/ActivePalette.cs" />
       </list>
     </option>
   </component>

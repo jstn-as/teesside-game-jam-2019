@@ -158,9 +158,10 @@ GameObject:
   - component: {fileID: 5856665372640793160}
   - component: {fileID: 5934679173378341133}
   - component: {fileID: 7756688932414647286}
+  - component: {fileID: 8916135803436142731}
   m_Layer: 0
   m_Name: Player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -341,6 +342,21 @@ MonoBehaviour:
   _actionKey: 101
   _flamePrefab: {fileID: 3503022815393648267, guid: a14dbfbc1dc8da949accfd894a70a0de,
     type: 3}
+--- !u!114 &8916135803436142731
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5856665372640793165}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b2f86f5c44859441a61331b75163775, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _otherPlayer: 2
+  _maxHealth: 3
+  _currentHealth: 0
 --- !u!1 &6525301488384833341
 GameObject:
   m_ObjectHideFlags: 0
@@ -545,6 +561,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Light Source
+      objectReference: {fileID: 0}
+    - target: {fileID: 7110562533858383051, guid: aa06ecd29da93014c90341b600e4627f,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7110562533858383050, guid: aa06ecd29da93014c90341b600e4627f,
         type: 3}
