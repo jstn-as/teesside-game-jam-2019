@@ -13,8 +13,10 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Light/Wall.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Ui/MenuManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/PaletteSwap/PaletteSwapTexture.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Projectile/Flame.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Singleton.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Player/PlayerAnimation.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Projectile/Projectile.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/PaletteSwap/PaletteSwapLookup.cs" root0="FORCE_HIGHLIGHTING" />
@@ -22,16 +24,19 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/RandomSprite.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Materials/Shadow.shader" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Light/LightSource.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Spawners/ItemSpawner.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/MouseDisable.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Light/Shadows.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Materials/Shaders/PaletteSwap.shader" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/TransformShake.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Player/CollisionManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Player/CollisionCheck.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Light/Direction.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Spawners/Spawner.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://F:/Stuff/teesside-game-jam-2019-master/Assets/Prefabs/PlayerFlame.prefab" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://F:/Stuff/teesside-game-jam-2019-master/Assets/Prefabs/PlayerFlame.prefab.meta" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Light/DarknessLayers.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Player/PlayerSpawner.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Spawners/PlayerSpawner.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Player/PlayerHealth.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Player/PlayerMovement.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Player/PlayerAction.cs" root0="FORCE_HIGHLIGHTING" />
@@ -54,20 +59,27 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Light/ModifyMesh.cs" />
         <option value="$PROJECT_DIR$/Assets/Materials/Shadow.shader" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Light/LineGenerator.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Player/PlayerSpawner.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Light/DarknessLayers.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Flame&amp;Projectiles/Flame.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Player/CollisionCheck.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Flame&amp;Projectiles/Projectile.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Light/LightSource.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Player/PlayerMovement.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/RandomSprite.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Player/PlayerAction.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Projectile/Projectile.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/CameraShake.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/TransformShake.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Projectile/Flame.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Player/PlayerHealth.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Light/DarknessLayers.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Singleton.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/MouseDisable.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Ui/MenuManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Player/CollisionCheck.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Player/PlayerSpawner.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Light/LightSource.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Projectile/Projectile.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/ItemSpawner.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Spawners/ItemSpawner.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Spawners/PlayerSpawner.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Spawners/Spawner.cs" />
       </list>
     </option>
   </component>
@@ -119,7 +131,7 @@
       <updated>1572028239418</updated>
       <workItem from="1572028243060" duration="7330000" />
       <workItem from="1572043948572" duration="8154000" />
-      <workItem from="1572088079511" duration="47615000" />
+      <workItem from="1572088079511" duration="54116000" />
     </task>
     <servers />
   </component>

@@ -45,7 +45,7 @@ namespace Projectile
                 Destroy(gameObject);
             }
             // Colliding with anything else.
-            else if (!other.CompareTag("CollisionCheck"))
+            else if (!(other.CompareTag("CollisionCheck") || other.CompareTag("SpawnBounds")))
             {
                 Destroy(gameObject);
             }

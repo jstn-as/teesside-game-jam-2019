@@ -17,7 +17,8 @@ namespace Player
         private void OnTriggerEnter2D(Collider2D other)
         {
             var otherObject = other.gameObject;
-            if (!_collidedObjects.Contains(otherObject) && !other.CompareTag("CollisionCheck"))
+            if (!_collidedObjects.Contains(otherObject) &&
+                !(other.CompareTag("CollisionCheck") || other.CompareTag("SpawnBounds")))
             {
                 _collidedObjects.Add(otherObject);
             }

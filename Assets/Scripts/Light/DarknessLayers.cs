@@ -7,6 +7,7 @@ namespace Light
     {
         [SerializeField] private int _layerCount;
         [SerializeField] private GameObject _layerPrefab;
+        [SerializeField] private bool _drawPitchBlack;
 
         private void Awake()
         {
@@ -16,6 +17,7 @@ namespace Light
                 SpawnLayer(i);
             }
             // Create the pitch dark layer.
+            if (!_drawPitchBlack) return;
             var spriteRenderer = SpawnLayer(_layerCount);
             spriteRenderer.color = Color.black;
         }

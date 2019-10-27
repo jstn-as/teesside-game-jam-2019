@@ -7,8 +7,11 @@ namespace Light
 {
     public class LightSource : MonoBehaviour
     {
+        [SerializeField] private float _baseLight = 1;
+        [SerializeField] private float _flicker = 0.4f;
+        [SerializeField] private float _lifetime;
+        [SerializeField] private float _lifetimeImpact = 1;
         [SerializeField] private int _layerCount;
-        [SerializeField] private Vector2 _baseScaleBounds;
         [SerializeField] private AnimationCurve _scaleChangeCurve;
         [SerializeField] private Sprite _maskSprite;
         [SerializeField] private List<SpriteMask> _spriteMasks;
@@ -16,7 +19,7 @@ namespace Light
         public float GetLightRadius()
         {
             var dropOff = _scaleChangeCurve.Evaluate(_layerCount);
-            return _baseScaleBounds.y + dropOff;
+            return _baseLight + _flicker + dropOff;
         } 
         private void Awake()
         {
@@ -38,10 +41,21 @@ namespace Light
 
         private void Update()
         {
+            // Update the lifetime of the light.
+            if (_lifetime > 0)
+            {
+                _lifetime -= Time.deltaTime;
+                _baseLight = Mathf.Clamp(_baseLight, 0, _lifetime * _lifetimeImpact);
+                _flicker = Mathf.Clamp(_flicker, 0, _lifetime * _lifetimeImpact);
+            }
+            else if (_lifetime < 0)
+            {
+                Destroy(gameObject);
+            }
             // Update the scale.
             for (var i = 0; i < _layerCount - 1; i++)
             {
-                var randomBaseScale = Random.Range(_baseScaleBounds.x, _baseScaleBounds.y);
+                var randomBaseScale = Random.Range(_baseLight, _baseLight + _flicker);
                 var scaleChange = _scaleChangeCurve.Evaluate(i);
                 var newScale = randomBaseScale + scaleChange;
                 _spriteMasks[i].transform.localScale = new Vector3(newScale, newScale, 0);
