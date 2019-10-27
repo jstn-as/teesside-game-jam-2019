@@ -13,7 +13,7 @@ namespace Player
         [SerializeField] private KeyCode _leftKey;
         [SerializeField] private KeyCode _rightKey;
         [Header("Misc")]
-        [SerializeField, Range(0, 1)] private float _speed;
+        [SerializeField] private float _speed;
         [SerializeField] private CollisionManager _collisionManager;
         private Vector3 _targetPosition;
         private Vector3 _startPosition;
@@ -85,7 +85,7 @@ namespace Player
                 
                 // Linear.
                 var newPosition = Vector3.Lerp(_startPosition, _targetPosition, _time);
-                _time += Time.fixedDeltaTime * (1 + _speed);
+                _time += Time.fixedDeltaTime * _speed;
                 _rb2D.MovePosition(newPosition);
             }
             else

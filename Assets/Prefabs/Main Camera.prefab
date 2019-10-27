@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 664184186467770857}
   - component: {fileID: 664184186467770860}
   - component: {fileID: 7418880884532433706}
+  - component: {fileID: 8969796659249887942}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -91,7 +92,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_AssetsPPU: 10
   m_RefResolutionX: 256
-  m_RefResolutionY: 200
+  m_RefResolutionY: 208
   m_UpscaleRT: 0
   m_PixelSnapping: 1
   m_CropFrameX: 1
@@ -118,3 +119,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _lookupTexture: {fileID: 2800000, guid: 8495b2eed4e665740acff90af7b39dea, type: 3}
+--- !u!114 &8969796659249887942
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 664184186467770861}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1e4e6ebac6a4594449e88b711e25449b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _shakeBounds: {x: 0.4, y: 0.4}
+  _shakeTime: 0

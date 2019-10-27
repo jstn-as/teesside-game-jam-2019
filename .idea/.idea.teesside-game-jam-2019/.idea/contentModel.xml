@@ -10,13 +10,14 @@
           <e p="Shaders" t="Include">
             <e p="PaletteSwap.shader" t="Include" />
           </e>
+          <e p="Shadow.shader" t="Include" />
         </e>
         <e p="Scripts" t="Include">
           <e p="Light" t="Include">
+            <e p="DarknessLayers.cs" t="Include" />
             <e p="Direction.cs" t="Include" />
             <e p="LightSource.cs" t="Include" />
             <e p="LineGenerator.cs" t="Include" />
-            <e p="ModifyMEsh.cs" t="Include" />
             <e p="Shadows.cs" t="Include" />
             <e p="Wall.cs" t="Include" />
           </e>
@@ -27,9 +28,18 @@
           <e p="Player" t="Include">
             <e p="CollisionCheck.cs" t="Include" />
             <e p="CollisionManager.cs" t="Include" />
+            <e p="PlayerAction.cs" t="Include" />
             <e p="PlayerAnimation.cs" t="Include" />
+            <e p="PlayerHealth.cs" t="Include" />
             <e p="PlayerMovement.cs" t="Include" />
+            <e p="PlayerSpawner.cs" t="Include" />
           </e>
+          <e p="Projectile" t="Include">
+            <e p="Flame.cs" t="Include" />
+            <e p="Projectile.cs" t="Include" />
+          </e>
+          <e p="RandomSprite.cs" t="Include" />
+          <e p="TransformShake.cs" t="Include" />
         </e>
       </e>
       <e p="obj" t="ExcludeRecursive" />

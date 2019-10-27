@@ -43,28 +43,37 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 452d924f049847240a6582da90be76b3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _layerCount: 9
-  _baseScaleBounds: {x: 4, y: 4.3}
+  _layerCount: 16
+  _baseScaleBounds: {x: 1, y: 1.4}
   _scaleChangeCurve:
     serializedVersion: 2
     m_Curve:
     - serializedVersion: 3
-      time: 0
-      value: 8
-      inSlope: 0
-      outSlope: 0
+      time: 0.24582
+      value: 7.9951115
+      inSlope: 0.5663181
+      outSlope: 0.5663181
       tangentMode: 0
-      weightedMode: 0
+      weightedMode: 2
       inWeight: 0
-      outWeight: 0.06818182
+      outWeight: 0.24923608
     - serializedVersion: 3
-      time: 9
-      value: 0.09786377
-      inSlope: 0
-      outSlope: 0
+      time: 11.363156
+      value: 5.256952
+      inSlope: -0.024683611
+      outSlope: -0.024683611
       tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.003162384
+      weightedMode: 3
+      inWeight: 0.55380434
+      outWeight: 0.53026384
+    - serializedVersion: 3
+      time: 14.338561
+      value: 0.4019754
+      inSlope: -26.631805
+      outSlope: -26.631805
+      tangentMode: 0
+      weightedMode: 1
+      inWeight: 0.048113644
       outWeight: 0
     m_PreInfinity: 2
     m_PostInfinity: 2

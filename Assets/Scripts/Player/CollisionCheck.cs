@@ -9,6 +9,8 @@ namespace Player
 
         public bool IsColliding()
         {
+            // Remove missing objects.
+            _collidedObjects.RemoveAll(item => item == null);
             return _collidedObjects.Count > 0;
         }
         
