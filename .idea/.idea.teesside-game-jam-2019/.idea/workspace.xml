@@ -12,6 +12,7 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/PowerUps/Candle.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Light/Wall.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Ui/MenuManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/PaletteSwap/PaletteSwapTexture.cs" root0="FORCE_HIGHLIGHTING" />
@@ -24,9 +25,11 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/RandomSprite.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Ui/HealthDisplay.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/WhoWon.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/SfxPlayer.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Light/LightSource.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Spawners/ItemSpawner.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/MouseDisable.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/FullScreen.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Light/Shadows.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Materials/Shaders/PaletteSwap.shader" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/TransformShake.cs" root0="FORCE_HIGHLIGHTING" />
@@ -39,11 +42,13 @@
     <setting file="file://F:/Stuff/teesside-game-jam-2019-master/Assets/Prefabs/PlayerFlame.prefab" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://F:/Stuff/teesside-game-jam-2019-master/Assets/Prefabs/PlayerFlame.prefab.meta" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Light/DarknessLayers.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/PowerUps/Potion.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Spawners/PlayerSpawner.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Player/PlayerHealth.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Player/PlayerMovement.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Player/PlayerAction.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/ActivePalette.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Breakable.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -65,13 +70,10 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Flame&amp;Projectiles/Projectile.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Player/PlayerMovement.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/RandomSprite.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Player/PlayerAction.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/CameraShake.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/TransformShake.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Projectile/Flame.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Singleton.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/MouseDisable.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Player/CollisionCheck.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Player/PlayerSpawner.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/ItemSpawner.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Spawners/Spawner.cs" />
@@ -80,15 +82,24 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Light/DarknessLayers.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Light/LightSource.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Light/LineGenerator.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Projectile/Projectile.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Spawners/PlayerSpawner.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Ui/MenuManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/WhoWon.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Ui/HealthDisplay.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Player/PlayerHealth.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Ui/WinnerDisplay.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/PaletteSwap/PaletteSwapLookup.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Projectile/Flame.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Projectile/Projectile.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Player/CollisionCheck.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Potion.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/PowerUps/Potion.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Breakable.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/PowerUps/Candle.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/FullScreen.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/SfxPlayer.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/ActivePalette.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/PaletteSwap/PaletteSwapLookup.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Player/PlayerAction.cs" />
       </list>
     </option>
   </component>
@@ -141,6 +152,7 @@
       <workItem from="1572028243060" duration="7330000" />
       <workItem from="1572043948572" duration="8154000" />
       <workItem from="1572088079511" duration="67347000" />
+      <workItem from="1572195911689" duration="7077000" />
     </task>
     <servers />
   </component>

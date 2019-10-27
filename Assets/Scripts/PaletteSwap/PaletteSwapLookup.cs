@@ -25,7 +25,7 @@ namespace PaletteSwap
         {
             if (_mat != null)
             {
-                DestroyImmediate(_mat);
+                Destroy(_mat);
             }
         }
 

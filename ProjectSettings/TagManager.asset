@@ -9,6 +9,7 @@ TagManager:
   - SpawnBounds
   - Lightable
   - PowerUp
+  - Flame
   layers:
   - Default
   - TransparentFX

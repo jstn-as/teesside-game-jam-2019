@@ -338,7 +338,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5b7d39cddcba5b747823563f3db68ec5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _actionCooldown: 1
+  _actionCooldown: 0.1
   _actionKey: 101
   _flamePrefab: {fileID: 3503022815393648267, guid: a14dbfbc1dc8da949accfd894a70a0de,
     type: 3}

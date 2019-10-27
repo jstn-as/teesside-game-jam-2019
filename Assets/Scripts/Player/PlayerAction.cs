@@ -29,18 +29,29 @@ namespace Player
             // Spawn the flame.
             if (Input.GetKeyDown(_actionKey) && _ammo > 0 && _timeSinceAction >= _actionCooldown)
             {
-                _ammo--;
-                _timeSinceAction = 0;
                 SpawnFlame();
             }
         }
 
         private void SpawnFlame()
         {
-            var spawnPos = transform.position / 1.6f;
+            var position = transform.position;
+            var spawnPos = position / 1.6f;
             var spawnX = Mathf.Round(spawnPos.x) * 1.6f;
             var spawnY = Mathf.Round(spawnPos.y) * 1.6f;
-            spawnPos= new Vector3(spawnX, spawnY, 0);
+            spawnPos = new Vector3(spawnX, spawnY, 0);
+            // Check if the position is clear.
+            var results = Physics2D.OverlapBoxAll(spawnPos, Vector2.one * 0.4f, 0);
+            foreach (var coll in results)
+            {
+                print(coll);
+                if (coll.CompareTag("Flame"))
+                {
+                    return;
+                }
+            }
+            _ammo--;
+            _timeSinceAction = 0;
             var flame = Instantiate(_flamePrefab, spawnPos, Quaternion.identity);
             flame.GetComponent<Flame>().SetOwner(gameObject);
         }
