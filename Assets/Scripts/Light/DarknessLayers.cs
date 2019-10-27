@@ -11,15 +11,15 @@ namespace Light
 
         private void Awake()
         {
+            // Create the pitch dark layer.
+            if (!_drawPitchBlack) return;
+            var spriteRenderer = SpawnLayer(0);
+            spriteRenderer.color = Color.black;
             // Create the layers of darkness.
-            for (var i = 0; i < _layerCount; i++)
+            for (var i = 1; i < _layerCount - 1; i++)
             {
                 SpawnLayer(i);
             }
-            // Create the pitch dark layer.
-            if (!_drawPitchBlack) return;
-            var spriteRenderer = SpawnLayer(_layerCount);
-            spriteRenderer.color = Color.black;
         }
 
         private SpriteRenderer SpawnLayer(int order)

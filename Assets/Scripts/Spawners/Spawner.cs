@@ -18,7 +18,6 @@ namespace Spawners
             {
                 foreach (var result in results)
                 {
-                    Debug.Log(result);
                     if (!(result.CompareTag("CollisionCheck") || result.CompareTag("SpawnBounds")))
                     {
                         return GetSpawnPosition(collider);

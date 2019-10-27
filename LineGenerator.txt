@@ -1,0 +1,73 @@
+                        // newTopRight.y = lightPos.y < topRight.y ? topRight.y + (topRight.y - lightPos.y) : topRight.y;
+
+//                        topLeft.x = lightPos.x > topLeft.x ? topLeft.x - _shadowLength : topLeft.x;
+//                        topLeft.y = lightPos.y < topLeft.y ? topLeft.y + _shadowLength : topLeft.y;
+//                        
+//                        bottomRight.x = lightPos.x < bottomRight.x ? bottomRight.x + _shadowLength : bottomRight.x;
+//                        bottomRight.y = lightPos.y > bottomRight.y ? bottomRight.y - _shadowLength : bottomRight.y;
+//
+//                        bottomLeft.x = lightPos.x > bottomLeft.x ? bottomLeft.x - _shadowLength : bottomLeft.x;
+//                        bottomLeft.y = lightPos.y > bottomLeft.y ? bottomLeft.y - _shadowLength : bottomLeft.y;
+                        
+                        
+//                        var nBl = Vector3.zero;
+//                        var nBr = Vector3.zero;
+//                        var nTl = Vector3.zero;
+//                        var nTr = Vector3.zero;
+                        // Adjust them.
+//                        // Bottom left.
+//                        nBl.x = Mathf.Clamp(oTl.x - (lightPos.x - oTl.x), -float.PositiveInfinity, oBl.x);
+//                        nBl.y = Mathf.Clamp(oTl.y - (lightPos.y - oTl.y), -float.PositiveInfinity, oBl.y);
+//
+//                        nBr.x = Mathf.Clamp(oBr.x - (lightPos.x - oBr.x), oBl.x, float.PositiveInfinity);
+//                        nBr.y = Mathf.Clamp(oBr.y - (lightPos.y - oBr.y), -float.PositiveInfinity, oTr.y);
+//                        
+//                        nTl.x = Mathf.Clamp(oTl.x - (lightPos.x - oTl.x), -float.PositiveInfinity, oTr.x);
+//                        nTl.y = Mathf.Clamp(oTl.y - (lightPos.y - oTl.y), oBl.y, float.PositiveInfinity);
+//
+//                        nTr.x = Mathf.Clamp(oTr.x - (lightPos.x - oTr.x), oTl.x, float.PositiveInfinity);
+//                        nTr.y = Mathf.Clamp(oTr.y - (lightPos.y - oTr.y), oBr.y, float.PositiveInfinity);
+//                        if (lightPos.x <= oBr.x && lightPos.y >= oBr.y)
+//                        {
+//                            oBr.x -= (lightPos.x - oBr.x);
+//                            oBr.y -= (lightPos.y - oBr.y);
+//                        }
+                        
+//                        bottomLeft.x -= (lightPos.x - bottomLeft.x);
+////                        bottomLeft.x = lightPos.x < bottomLeft.x
+////                            ? bottomLeft.x
+////                            : bottomLeft.x - (lightPos.x - bottomLeft.x);
+//                        bottomLeft.y -= (lightPos.y - bottomLeft.y);
+////                        bottomLeft.y = lightPos.y < bottomLeft.y
+////                            ? bottomLeft.y
+////                            : bottomLeft.y - (lightPos.y - bottomLeft.y);
+////                        // Bottom right.
+//                        bottomRight.x += (bottomRight.x - lightPos.x);
+////                        bottomRight.x = lightPos.x > bottomRight.x
+////                            ? bottomRight.x
+////                            : bottomRight.x + (bottomRight.x - lightPos.x);
+//                        bottomRight.y -= (lightPos.y - bottomRight.y);
+//                        bottomRight.y = lightPos.y < bottomRight.y
+//                            ? bottomRight.y
+//                            : bottomRight.y - (lightPos.y - bottomRight.y);
+//                        // Top left.
+//                        topLeft.x -= (lightPos.x - topLeft.x);
+////                        topLeft.x = lightPos.x < topLeft.x || lightPos.y > topLeft.y
+////                                    ? topLeft.x
+////                                    : topLeft.x - (lightPos.x - topLeft.x);
+//                        topLeft.y += (topLeft.y - lightPos.y);
+////                        topLeft.y = lightPos.y > topLeft.y || lightPos.x < topLeft.x
+////                                    ? topLeft.y
+////                                    : topLeft.y + (topLeft.y - lightPos.y);
+//                        // Top right.
+//                        topRight.x += (topRight.x - lightPos.x);;
+////                        topRight.x = lightPos.x > topRight.x || lightPos.y > topRight.y
+////                                     ? topRight.x
+////                                     : topRight.x + (topRight.x - lightPos.x);
+//                        topRight.y += (topRight.y - lightPos.y);
+////                        topRight.y = lightPos.y > topRight.y || lightPos.x > topRight.x
+////                                     ? topRight.y
+////                                     : topRight.y + (topRight.y - lightPos.y);
+
+                        // Set the vertices of the mesh.
+//                        Debug.DrawLine(lightPos, topRight, Color.red);

@@ -43,8 +43,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 452d924f049847240a6582da90be76b3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _baseLight: 1
+  _flicker: 0.4
+  _lifetime: 100
+  _lifetimeImpact: 1
   _layerCount: 16
-  _baseScaleBounds: {x: 1, y: 1.4}
+  _destroyOnDie: 1
   _scaleChangeCurve:
     serializedVersion: 2
     m_Curve:
@@ -56,7 +60,7 @@ MonoBehaviour:
       tangentMode: 0
       weightedMode: 2
       inWeight: 0
-      outWeight: 0.24923608
+      outWeight: 0.36729187
     - serializedVersion: 3
       time: 11.363156
       value: 5.256952
@@ -64,7 +68,7 @@ MonoBehaviour:
       outSlope: -0.024683611
       tangentMode: 0
       weightedMode: 3
-      inWeight: 0.55380434
+      inWeight: 0.42684144
       outWeight: 0.53026384
     - serializedVersion: 3
       time: 14.338561
@@ -79,4 +83,3 @@ MonoBehaviour:
     m_PostInfinity: 2
     m_RotationOrder: 4
   _maskSprite: {fileID: 21300000, guid: f8bf8e7ce67c5ea41a546fc780d3f6f7, type: 3}
-  _spriteMasks: []

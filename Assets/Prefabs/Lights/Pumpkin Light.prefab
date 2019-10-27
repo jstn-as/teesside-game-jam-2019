@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1001 &3679369007308122916
+--- !u!1001 &4156620315615233503
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -10,7 +10,22 @@ PrefabInstance:
     - target: {fileID: 7110562533858383051, guid: aa06ecd29da93014c90341b600e4627f,
         type: 3}
       propertyPath: m_Name
-      value: Spawn Light
+      value: Pumpkin Light
+      objectReference: {fileID: 0}
+    - target: {fileID: 7110562533858383093, guid: aa06ecd29da93014c90341b600e4627f,
+        type: 3}
+      propertyPath: _baseLight
+      value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7110562533858383093, guid: aa06ecd29da93014c90341b600e4627f,
+        type: 3}
+      propertyPath: _flicker
+      value: 0.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 7110562533858383093, guid: aa06ecd29da93014c90341b600e4627f,
+        type: 3}
+      propertyPath: _lifetime
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 7110562533858383050, guid: aa06ecd29da93014c90341b600e4627f,
         type: 3}
@@ -66,16 +81,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7110562533858383093, guid: aa06ecd29da93014c90341b600e4627f,
-        type: 3}
-      propertyPath: _lifetime
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 7110562533858383093, guid: aa06ecd29da93014c90341b600e4627f,
-        type: 3}
-      propertyPath: _lifetimeImpact
-      value: 0.5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: aa06ecd29da93014c90341b600e4627f, type: 3}

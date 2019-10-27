@@ -12,6 +12,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: Lit Projectile
       objectReference: {fileID: 0}
+    - target: {fileID: 5024479716136792080, guid: 836810bc7df09dd4c8d9c4255290a464,
+        type: 3}
+      propertyPath: _lifetime
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 5368181328819245902, guid: 836810bc7df09dd4c8d9c4255290a464,
+        type: 3}
+      propertyPath: m_SortingLayerID
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3773842410835021567, guid: 836810bc7df09dd4c8d9c4255290a464,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -67,16 +77,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5368181328819245902, guid: 836810bc7df09dd4c8d9c4255290a464,
-        type: 3}
-      propertyPath: m_SortingLayerID
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5024479716136792080, guid: 836810bc7df09dd4c8d9c4255290a464,
-        type: 3}
-      propertyPath: _lifetime
-      value: 20
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 836810bc7df09dd4c8d9c4255290a464, type: 3}
 --- !u!4 &8607495343684061902 stripped
@@ -96,6 +96,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Light Source
+      objectReference: {fileID: 0}
+    - target: {fileID: 7110562533858383093, guid: aa06ecd29da93014c90341b600e4627f,
+        type: 3}
+      propertyPath: _baseLight
+      value: 0.8
       objectReference: {fileID: 0}
     - target: {fileID: 7110562533858383050, guid: aa06ecd29da93014c90341b600e4627f,
         type: 3}

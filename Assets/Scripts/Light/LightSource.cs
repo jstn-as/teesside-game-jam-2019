@@ -12,10 +12,15 @@ namespace Light
         [SerializeField] private float _lifetime;
         [SerializeField] private float _lifetimeImpact = 1;
         [SerializeField] private int _layerCount;
+        [SerializeField] private bool _destroyOnDie;
         [SerializeField] private AnimationCurve _scaleChangeCurve;
         [SerializeField] private Sprite _maskSprite;
-        [SerializeField] private List<SpriteMask> _spriteMasks;
+        private List<SpriteMask> _spriteMasks;
 
+        public void SetLifetime(float newLifetime)
+        {
+            _lifetime = newLifetime;
+        }
         public float GetLightRadius()
         {
             var dropOff = _scaleChangeCurve.Evaluate(_layerCount);
@@ -23,8 +28,9 @@ namespace Light
         } 
         private void Awake()
         {
+            _spriteMasks = new List<SpriteMask>();
             // Create the sprite masks.
-            for (var i = 0; i < _layerCount + 1; i++)
+            for (var i = 0; i < _layerCount; i++)
             {
                 var spriteObject = new GameObject($"Sprite Mask {i}", typeof(SpriteMask));
                 spriteObject.transform.SetParent(transform);
@@ -45,12 +51,10 @@ namespace Light
             if (_lifetime > 0)
             {
                 _lifetime -= Time.deltaTime;
-                _baseLight = Mathf.Clamp(_baseLight, 0, _lifetime * _lifetimeImpact);
-                _flicker = Mathf.Clamp(_flicker, 0, _lifetime * _lifetimeImpact);
             }
-            else if (_lifetime < 0)
+            else if (_lifetime < 0 && _destroyOnDie)
             {
-                Destroy(gameObject);
+                Destroy(gameObject, 2f);
             }
             // Update the scale.
             for (var i = 0; i < _layerCount - 1; i++)
@@ -58,9 +62,10 @@ namespace Light
                 var randomBaseScale = Random.Range(_baseLight, _baseLight + _flicker);
                 var scaleChange = _scaleChangeCurve.Evaluate(i);
                 var newScale = randomBaseScale + scaleChange;
+                var life = Mathf.Clamp(_lifetime, 0, _baseLight);
+                newScale *= (life * _lifetimeImpact);
                 _spriteMasks[i].transform.localScale = new Vector3(newScale, newScale, 0);
             }
-            _spriteMasks[_spriteMasks.Count - 1].transform.localScale = _spriteMasks[0].transform.localScale;
         }
     }
 }

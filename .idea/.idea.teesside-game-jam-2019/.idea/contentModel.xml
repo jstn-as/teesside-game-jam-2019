@@ -10,12 +10,12 @@
           <e p="Shaders" t="Include">
             <e p="PaletteSwap.shader" t="Include" />
           </e>
-          <e p="Shadow.shader" t="Include" />
         </e>
         <e p="Scripts" t="Include">
           <e p="Light" t="Include">
             <e p="DarknessLayers.cs" t="Include" />
             <e p="Direction.cs" t="Include" />
+            <e p="LightableObject.cs" t="Include" />
             <e p="LightSource.cs" t="Include" />
             <e p="LineGenerator.cs" t="Include" />
             <e p="Shadows.cs" t="Include" />

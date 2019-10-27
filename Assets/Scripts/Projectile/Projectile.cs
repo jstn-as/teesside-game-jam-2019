@@ -1,4 +1,5 @@
-﻿using Player;
+﻿using Light;
+using Player;
 using UnityEngine;
 
 namespace Projectile
@@ -42,6 +43,12 @@ namespace Projectile
             else if (other.CompareTag("Breakable"))
             {
                 Destroy(other.gameObject);
+                Destroy(gameObject);
+            }
+            // Colliding with a lightable object.
+            else if (other.CompareTag("Lightable"))
+            {
+                other.GetComponent<LightableObject>().LightUp();
                 Destroy(gameObject);
             }
             // Colliding with anything else.
