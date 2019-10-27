@@ -45,7 +45,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _baseLight: 1
   _flicker: 0.4
-  _lifetime: 100
+  _lifetime: Infinity
   _lifetimeImpact: 1
   _layerCount: 16
   _destroyOnDie: 1

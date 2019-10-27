@@ -70,7 +70,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 1919114529
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: -8092295105046505211, guid: ba651943f03b819429298f4cbdc63bd1,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -95,6 +95,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f78f8ac0025dfd4e88a9aacdf52aeb6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _owner: {fileID: 0}
+  _fuseTime: 2
+  _shakeTime: 0.3
   _projectilePrefab: {fileID: 5802240784637325844, guid: 652194574766f8a468108b8d14850886,
     type: 3}
 --- !u!95 &793165902326003712

@@ -8,6 +8,7 @@ TagManager:
   - Breakable
   - SpawnBounds
   - Lightable
+  - PowerUp
   layers:
   - Default
   - TransparentFX

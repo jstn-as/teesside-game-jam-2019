@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections;
-using System.Collections.Generic;
-using PaletteSwap;
+﻿using PaletteSwap;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 

@@ -5,6 +5,7 @@ namespace Projectile
 {
     public class Flame : MonoBehaviour
     {
+        [SerializeField] private GameObject _owner;
         [SerializeField] private float _fuseTime = 2f;
         [SerializeField] private float _shakeTime = 0.5f;
         [SerializeField] private GameObject _projectilePrefab;
@@ -12,7 +13,10 @@ namespace Projectile
         private static readonly int Explode = Animator.StringToHash("explode");
         private TransformShake _transformShake;
 
-
+        public void SetOwner(GameObject newOwner)
+        {
+            _owner = newOwner;
+        }
         private void Awake()
         {
             _animator = GetComponent<Animator>();
@@ -39,7 +43,8 @@ namespace Projectile
             var currentRotation = transform.rotation;
             for (var i = 0; i < 4; i++)
             {
-                Instantiate(_projectilePrefab, transform.position + currentRotation * Vector3.right, currentRotation);
+                var projectile = Instantiate(_projectilePrefab, transform.position + currentRotation * Vector3.right, currentRotation);
+                projectile.GetComponent<Projectile>().SetOwner(_owner);
                 currentRotation *= Quaternion.Euler(Vector3.forward * 90);
             }
             _transformShake.SetShakeTime(_shakeTime);
@@ -50,6 +55,7 @@ namespace Projectile
         public void DestroyFlame()
         {
             Destroy(gameObject);
+            _owner.GetComponent<PlayerAction>().ChangeAmmo(1);
         }
     }
 }

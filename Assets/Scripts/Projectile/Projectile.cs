@@ -6,10 +6,15 @@ namespace Projectile
 {
     public class Projectile : MonoBehaviour
     {
+        [SerializeField] private GameObject _owner;
         [SerializeField] private float _speed = 5;
         [SerializeField] private float _lifetime = 20f;
         private Rigidbody2D _rb2D;
 
+        public void SetOwner(GameObject newOwner)
+        {
+            _owner = newOwner;
+        }
         private void Awake()
         {
             _rb2D = GetComponent<Rigidbody2D>();
@@ -36,13 +41,16 @@ namespace Projectile
             // Colliding with player.
             if (other.CompareTag("Player"))
             {
-                other.GetComponent<PlayerHealth>().ChangeHealth(-1);
-                Destroy(gameObject);
+                if (other.gameObject != _owner)
+                {
+                    other.GetComponent<PlayerHealth>().ChangeHealth(-1);
+                    Destroy(gameObject);
+                }
             }
             // Colliding with breakable object.
             else if (other.CompareTag("Breakable"))
             {
-                Destroy(other.gameObject);
+                other.GetComponent<Breakable>().Explode();
                 Destroy(gameObject);
             }
             // Colliding with a lightable object.

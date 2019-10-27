@@ -10,8 +10,10 @@ GameObject:
   m_Component:
   - component: {fileID: 8558487054166696684}
   - component: {fileID: 8558487054166696685}
+  - component: {fileID: 3163713298624538357}
   - component: {fileID: 8558487054166696686}
   - component: {fileID: 8558487054166696687}
+  - component: {fileID: 8365852818350713682}
   m_Layer: 0
   m_Name: Breakable Block
   m_TagString: Breakable
@@ -27,7 +29,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8558487054166696659}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 8, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -82,6 +84,25 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!95 &3163713298624538357
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8558487054166696659}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: a6acc9c820ae8ca46b2d810a9cd2414d, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!61 &8558487054166696686
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -123,3 +144,21 @@ MonoBehaviour:
   _sprites:
   - {fileID: -6984465467794331371, guid: 1acc7ac6e3de55a4082cd452a00343f4, type: 3}
   - {fileID: 6297325419972939874, guid: 1acc7ac6e3de55a4082cd452a00343f4, type: 3}
+--- !u!114 &8365852818350713682
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8558487054166696659}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8fed641a2daee314c89c067309478693, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _powerUpThreshold: 0.2
+  _powerUps:
+  - {fileID: 3450689551077911988, guid: 443bf5d1fbe822e41885d955d718a5a4, type: 3}
+  - {fileID: 8371897660387563162, guid: 1619c3d26aef1a241bb37a34068e14ca, type: 3}
+  _lightPrefab: {fileID: 565501583861602972, guid: bc2e3d0a9af850b42b63579038b29e68,
+    type: 3}

@@ -13,6 +13,8 @@
         </e>
         <e p="Scripts" t="Include">
           <e p="ActivePalette.cs" t="Include" />
+          <e p="Breakable.cs" t="Include" />
+          <e p="FullScreen.cs" t="Include" />
           <e p="Light" t="Include">
             <e p="DarknessLayers.cs" t="Include" />
             <e p="Direction.cs" t="Include" />
@@ -35,11 +37,16 @@
             <e p="PlayerHealth.cs" t="Include" />
             <e p="PlayerMovement.cs" t="Include" />
           </e>
+          <e p="PowerUps" t="Include">
+            <e p="Candle.cs" t="Include" />
+            <e p="Potion.cs" t="Include" />
+          </e>
           <e p="Projectile" t="Include">
             <e p="Flame.cs" t="Include" />
             <e p="Projectile.cs" t="Include" />
           </e>
           <e p="RandomSprite.cs" t="Include" />
+          <e p="SfxPlayer.cs" t="Include" />
           <e p="Singleton.cs" t="Include" />
           <e p="Spawners" t="Include">
             <e p="ItemSpawner.cs" t="Include" />

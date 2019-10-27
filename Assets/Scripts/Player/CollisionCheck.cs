@@ -18,7 +18,8 @@ namespace Player
         {
             var otherObject = other.gameObject;
             if (!_collidedObjects.Contains(otherObject) &&
-                !(other.CompareTag("CollisionCheck") || other.CompareTag("SpawnBounds")))
+                !(other.CompareTag("CollisionCheck") || other.CompareTag("SpawnBounds") || other.CompareTag("Player") ||
+                  other.CompareTag("PowerUp")))
             {
                 _collidedObjects.Add(otherObject);
             }

@@ -29,7 +29,7 @@ namespace Player
             // Spawn the flame.
             if (Input.GetKeyDown(_actionKey) && _ammo > 0 && _timeSinceAction >= _actionCooldown)
             {
-                // _ammo--;
+                _ammo--;
                 _timeSinceAction = 0;
                 SpawnFlame();
             }
@@ -41,7 +41,8 @@ namespace Player
             var spawnX = Mathf.Round(spawnPos.x) * 1.6f;
             var spawnY = Mathf.Round(spawnPos.y) * 1.6f;
             spawnPos= new Vector3(spawnX, spawnY, 0);
-            Instantiate(_flamePrefab, spawnPos, Quaternion.identity);
+            var flame = Instantiate(_flamePrefab, spawnPos, Quaternion.identity);
+            flame.GetComponent<Flame>().SetOwner(gameObject);
         }
     }
 }

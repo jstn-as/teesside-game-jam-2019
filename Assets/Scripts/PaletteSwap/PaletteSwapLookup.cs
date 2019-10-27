@@ -2,7 +2,6 @@
 
 namespace PaletteSwap
 {
-    [ExecuteInEditMode]
     public class PaletteSwapLookup : MonoBehaviour
     {
         [SerializeField] private Texture _lookupTexture;
@@ -17,13 +16,17 @@ namespace PaletteSwap
         {
             var shader = Shader.Find("Custom/Unlit/PaletteSwap");
             if (_mat == null)
+            {
                 _mat = new Material(shader);
+            }
         }
 
         private void OnDisable()
         {
             if (_mat != null)
+            {
                 DestroyImmediate(_mat);
+            }
         }
 
         private void OnRenderImage(RenderTexture src, RenderTexture dst)
