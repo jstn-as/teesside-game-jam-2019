@@ -1,5 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using UnityEngine;
 using Random = UnityEngine.Random;
 
@@ -43,6 +42,8 @@ namespace Light
                 spriteMask.frontSortingOrder = 11 + i;
                 spriteMask.backSortingOrder = 10 + i;
             }
+            // Add itself to the light sources.
+            FindObjectOfType<ShadowCaster>().AddLight(this);
         }
 
         private void Update()
@@ -66,6 +67,11 @@ namespace Light
                 newScale *= (life * _lifetimeImpact);
                 _spriteMasks[i].transform.localScale = new Vector3(newScale, newScale, 0);
             }
+        }
+
+        private void OnDestroy()
+        {
+            FindObjectOfType<ShadowCaster>().RemoveLight(this);
         }
     }
 }
