@@ -9,8 +9,13 @@ namespace Projectile
         [SerializeField] private GameObject _owner;
         [SerializeField] private float _speed = 5;
         [SerializeField] private float _lifetime = 20f;
+        [SerializeField] private Transform _sprite;
         private Rigidbody2D _rb2D;
 
+        public void SetRotation(Quaternion rotation)
+        {
+            _sprite.rotation = rotation;
+        }
         public void SetOwner(GameObject newOwner)
         {
             _owner = newOwner;
@@ -32,7 +37,7 @@ namespace Projectile
         private void FixedUpdate()
         {
             var t = transform;
-            var targetPosition = t.position += _speed * Time.fixedDeltaTime * t.right;
+            var targetPosition = t.position += _speed * Time.fixedDeltaTime * _sprite.right;
             _rb2D.MovePosition(targetPosition);
         }
 

@@ -23,8 +23,9 @@ namespace Light
         }
         public float GetLightRadius()
         {
-            var dropOff = _scaleChangeCurve.Evaluate(_layerCount);
-            return _baseLight + _flicker + dropOff;
+            var dropOff = _scaleChangeCurve.Evaluate(0);
+            var lightRadius = _baseLight + _flicker + dropOff;
+            return lightRadius * _lifetimeImpact;
         } 
         private void Start()
         {

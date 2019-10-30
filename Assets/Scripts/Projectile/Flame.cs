@@ -52,8 +52,12 @@ namespace Projectile
             var currentRotation = transform.rotation;
             for (var i = 0; i < 4; i++)
             {
-                var projectile = Instantiate(_projectilePrefab, transform.position + currentRotation * Vector3.right, currentRotation);
-                projectile.GetComponent<Projectile>().SetOwner(_owner);
+                var projectile = Instantiate(_projectilePrefab, transform.position + currentRotation * Vector3.right, Quaternion.identity);
+                // Set up the projectile.
+                var projectileComponent = projectile.GetComponent<Projectile>();
+                projectileComponent.SetOwner(_owner);
+                projectileComponent.SetRotation(currentRotation);
+                
                 currentRotation *= Quaternion.Euler(Vector3.forward * 90);
             }
             _transformShake.SetShakeTime(_shakeTime);

@@ -99,7 +99,7 @@ MonoBehaviour:
   _owner: {fileID: 0}
   _fuseTime: 2
   _shakeTime: 0.3
-  _projectilePrefab: {fileID: 5802240784637325844, guid: 652194574766f8a468108b8d14850886,
+  _projectilePrefab: {fileID: 5519976402351930533, guid: 652194574766f8a468108b8d14850886,
     type: 3}
   _explodeClip: {fileID: 8300000, guid: f5d1be69c9452564eb725fada8973596, type: 3}
 --- !u!95 &793165902326003712
@@ -154,11 +154,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 430639511593280540}
     m_Modifications:
-    - target: {fileID: 7110562533858383051, guid: aa06ecd29da93014c90341b600e4627f,
-        type: 3}
-      propertyPath: m_Name
-      value: Light Source
-      objectReference: {fileID: 0}
     - target: {fileID: 7110562533858383050, guid: aa06ecd29da93014c90341b600e4627f,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -213,6 +208,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7110562533858383051, guid: aa06ecd29da93014c90341b600e4627f,
+        type: 3}
+      propertyPath: m_Name
+      value: Light Source
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: aa06ecd29da93014c90341b600e4627f, type: 3}
