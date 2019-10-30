@@ -340,7 +340,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _actionCooldown: 0.1
   _actionKey: 101
-  _flamePrefab: {fileID: 3503022815393648267, guid: a14dbfbc1dc8da949accfd894a70a0de,
+  _flamePrefab: {fileID: 3503022815393648267, guid: 241e4dffae9487c469ab1a1f42967032,
     type: 3}
   _castClip: {fileID: 8300000, guid: 215ef0630c66e494a8447420cc3f9355, type: 3}
 --- !u!114 &8916135803436142731
@@ -560,16 +560,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5856665372640793162}
     m_Modifications:
-    - target: {fileID: 7110562533858383051, guid: aa06ecd29da93014c90341b600e4627f,
-        type: 3}
-      propertyPath: m_Name
-      value: Light Source
-      objectReference: {fileID: 0}
-    - target: {fileID: 7110562533858383051, guid: aa06ecd29da93014c90341b600e4627f,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 7110562533858383050, guid: aa06ecd29da93014c90341b600e4627f,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -623,6 +613,16 @@ PrefabInstance:
     - target: {fileID: 7110562533858383050, guid: aa06ecd29da93014c90341b600e4627f,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7110562533858383051, guid: aa06ecd29da93014c90341b600e4627f,
+        type: 3}
+      propertyPath: m_Name
+      value: Light Source
+      objectReference: {fileID: 0}
+    - target: {fileID: 7110562533858383051, guid: aa06ecd29da93014c90341b600e4627f,
+        type: 3}
+      propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
