@@ -1,4 +1,5 @@
-﻿using Player;
+﻿using System;
+using Player;
 using UnityEngine;
 
 namespace Projectile
@@ -9,9 +10,11 @@ namespace Projectile
         [SerializeField] private float _fuseTime = 2f;
         [SerializeField] private float _shakeTime = 0.5f;
         [SerializeField] private GameObject _projectilePrefab;
-        private Animator _animator;
+        [SerializeField] private AudioClip _explodeClip;
         private static readonly int Explode = Animator.StringToHash("explode");
+        private Animator _animator;
         private TransformShake _transformShake;
+        private SfxPlayer _sfxPlayer;
 
         public void SetOwner(GameObject newOwner)
         {
@@ -22,6 +25,12 @@ namespace Projectile
             _animator = GetComponent<Animator>();
             _transformShake = FindObjectOfType<TransformShake>();
         }
+
+        private void Start()
+        {
+            _sfxPlayer = FindObjectOfType<SfxPlayer>();
+        }
+
         private void Update()
         {
             
@@ -49,6 +58,7 @@ namespace Projectile
             }
             _transformShake.SetShakeTime(_shakeTime);
             _animator.SetTrigger(Explode);
+            _sfxPlayer.PlayAudio(_explodeClip);
             // Destroy(gameObject, _destroyPause);
         }
 

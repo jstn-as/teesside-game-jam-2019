@@ -6,7 +6,7 @@ using UnityEngine.Tilemaps;
 
 namespace Light
 {
-    public class ShadowCaster1 : MonoBehaviour
+    public class ShadowCaster : MonoBehaviour
     {
         [SerializeField] private List<LightSource> _lights;
         [SerializeField] private float _shadowLength = 1;
@@ -110,82 +110,98 @@ namespace Light
                     {
                         // Change the 4 meshes.
                         // Top.
-//                        if (bottom > lightPos.y)
-//                        {
-//                            var tl = topLeft + (bottomLeft - lightPos).normalized * _shadowLength;
-//                            var tr = topRight + (bottomRight - lightPos).normalized * _shadowLength;
-//                            if (points[0][0] != topLeft && tl.x > points[0][0].x)
-//                            {
-//                                points[0][0] = tl;
-//                            }
-//
-//                            if (points[0][1] != topRight && tr.x < points[0][1].x)
-//                            {
-//                                points[0][1] = tr;
-//                            }
-//                        }
-//                        else
-//                        {
-//                            points[0][0] = topLeft;
-//                            points[0][1] = topRight;
-//                        }
-                        // Bottom.
-//                        if (top < lightPos.y)
-//                        {
-//                            var bl = bottomLeft + (topLeft - lightPos).normalized * _shadowLength;
-//                            var br = bottomRight + (topRight - lightPos).normalized * _shadowLength;
-//                            if (points[1][0] != bottomLeft && bl.x > points[1][0].x)
-//                            {
-//                                points[1][0] = bl;
-//                            }
-//
-//                            if (points[1][1] != bottomRight && br.x < points[1][1].x)
-//                            {
-//                                points[1][1] = br;
-//                            }
-//                        }
-//                        else
-//                        {
-//                            points[1][0] = bottomLeft;
-//                            points[1][1] = bottomRight;
-//                        }
-                        // Left.
-//                        if (right < lightPos.x)
-//                        {
-//                            var bl = bottomLeft + (bottomRight - lightPos).normalized * _shadowLength;
-//                            var tl = topLeft + (topRight - lightPos).normalized * _shadowLength;
-//                            if (points[2][0] != bottomLeft && bl.y > points[2][0].y)
-//                            {
-//                                points[2][0] = bl;
-//                            }
-//                            if (points[2][1] != topLeft && tl.y < points[2][1].y)
-//                            {
-//                                points[2][1] = tl;
-//                            }
-//                        }
-//                        else
-//                        {
-//                            points[2][0] = bottomLeft;
-//                            points[2][1] = topLeft;
-//                        }
-                        // Right.
-                        var tr = topRight + (topLeft - lightPos).normalized * _shadowLength;
-                        var br = bottomRight + (bottomLeft - lightPos).normalized * _shadowLength;
-                        tr.x = Mathf.Clamp(tr.x, left, float.PositiveInfinity);
-                        br.x = Mathf.Clamp(br.x, left, float.PositiveInfinity);
-                        if (points[3][0] != bottomLeft && br.y > points[3][0].y)
                         {
-                            points[3][0] = br;
-                        }
-                        if (points[3][1] != topLeft && tr.y < points[3][1].y)
-                        {
-                            points[3][1] = tr;
-                        }
+                            var tl = topLeft + (bottomLeft - lightPos).normalized * _shadowLength;
+                            var tr = topRight + (bottomRight - lightPos).normalized * _shadowLength;
+                            tl.y = Mathf.Clamp(tl.y, bottom, float.PositiveInfinity);
+                            tr.y = Mathf.Clamp(tr.y, bottom, float.PositiveInfinity);
+                            if (lightPos.y > top)
+                            {
+                                points[0][0] = bottomLeft;
+                                points[0][1] = bottomRight;
+                            }
+                            else
+                            {
+                                if (points[0][0] != bottomLeft && tl.x > points[0][0].x)
+                                {
+                                    points[0][0] = tl;
+                                }
 
-                        if (lightPos.x > right)
+                                if (points[0][1] != bottomRight && tr.x < points[0][1].x)
+                                {
+                                    points[0][1] = tr;
+                                }
+                            }
+                        }
+                        // Bottom.
                         {
-                            points[3][0] = bottomLeft;
-                            points[3][1] = topLeft;
+                            var bl = bottomLeft + (topLeft - lightPos).normalized * _shadowLength;
+                            var br = bottomRight + (topRight - lightPos).normalized * _shadowLength;
+                            bl.y = Mathf.Clamp(bl.y, float.NegativeInfinity, top);
+                            br.y = Mathf.Clamp(br.y, float.NegativeInfinity, top);
+                            if (lightPos.y < bottom)
+                            {
+                                points[1][0] = topLeft;
+                                points[1][1] = topRight;
+                            }
+                            else
+                            {
+                                if (points[1][0] != topLeft && bl.x > points[1][0].x)
+                                {
+                                    points[1][0] = bl;
+                                }
+
+                                if (points[1][1] != topRight && br.x < points[1][1].x)
+                                {
+                                    points[1][1] = br;
+                                }
+                            }
+                        }
+                        // Left.
+                        {
+                            var bl = bottomLeft + (bottomRight - lightPos).normalized * _shadowLength;
+                            var tl = topLeft + (topRight - lightPos).normalized * _shadowLength;
+                            bl.x = Mathf.Clamp(bl.x, float.NegativeInfinity, right);
+                            tl.x = Mathf.Clamp(tl.x, float.NegativeInfinity, right);
+                            if (lightPos.x < left)
+                            {
+                                points[2][0] = bottomRight;
+                                points[2][1] = topRight;
+                            }
+                            else
+                            {
+                                if (points[2][0] != bottomRight && bl.y > points[2][0].y)
+                                {
+                                    points[2][0] = bl;
+                                }
+                                if (points[2][1] != topRight && tl.y < points[2][1].y)
+                                {
+                                    points[2][1] = tl;
+                                }
+                            }
+                        }
+                        // Right.
+                        {
+                            var tr = topRight + (topLeft - lightPos).normalized * _shadowLength;
+                            var br = bottomRight + (bottomLeft - lightPos).normalized * _shadowLength;
+                            tr.x = Mathf.Clamp(tr.x, left, float.PositiveInfinity);
+                            br.x = Mathf.Clamp(br.x, left, float.PositiveInfinity);
+                            if (lightPos.x > right)
+                            {
+                                points[3][0] = topLeft;
+                                points[3][1] = bottomLeft;
+                            }
+                            else
+                            {
+                                if (points[3][0] != bottomLeft && br.y > points[3][0].y)
+                                {
+                                    points[3][0] = br;
+                                }
+                                if (points[3][1] != topLeft && tr.y < points[3][1].y)
+                                {
+                                    points[3][1] = tr;
+                                }
+                            }
                         }
                     }
                 }

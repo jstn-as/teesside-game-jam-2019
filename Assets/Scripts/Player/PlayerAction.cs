@@ -9,6 +9,8 @@ namespace Player
         [SerializeField] private float _actionCooldown;
         [SerializeField] private KeyCode _actionKey = KeyCode.E;
         [SerializeField] private GameObject _flamePrefab;
+        [SerializeField] private AudioClip _castClip;
+        private SfxPlayer _sfxPlayer;
         private float _timeSinceAction;
         private int _ammo = 1;
         
@@ -19,6 +21,11 @@ namespace Player
         private void Awake()
         {
             _timeSinceAction = _actionCooldown;
+        }
+
+        private void Start()
+        {
+            _sfxPlayer = FindObjectOfType<SfxPlayer>();
         }
 
         private void Update()
@@ -44,12 +51,13 @@ namespace Player
             var results = Physics2D.OverlapBoxAll(spawnPos, Vector2.one * 0.4f, 0);
             foreach (var coll in results)
             {
-                print(coll);
                 if (coll.CompareTag("Flame"))
                 {
                     return;
                 }
             }
+            // Spawn the flame.
+            _sfxPlayer.PlayAudio(_castClip);
             _ammo--;
             _timeSinceAction = 0;
             var flame = Instantiate(_flamePrefab, spawnPos, Quaternion.identity);

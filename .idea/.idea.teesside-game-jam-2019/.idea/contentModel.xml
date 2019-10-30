@@ -21,8 +21,8 @@
             <e p="Direction.cs" t="Include" />
             <e p="LightableObject.cs" t="Include" />
             <e p="LightSource.cs" t="Include" />
+            <e p="LineGenerator.cs" t="Include" />
             <e p="ShadowCaster.cs" t="Include" />
-            <e p="ShadowCaster1.cs" t="Include" />
             <e p="Shadows.cs" t="Include" />
             <e p="Wall.cs" t="Include" />
           </e>

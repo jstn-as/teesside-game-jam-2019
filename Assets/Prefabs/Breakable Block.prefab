@@ -162,3 +162,4 @@ MonoBehaviour:
   - {fileID: 8371897660387563162, guid: 1619c3d26aef1a241bb37a34068e14ca, type: 3}
   _lightPrefab: {fileID: 565501583861602972, guid: bc2e3d0a9af850b42b63579038b29e68,
     type: 3}
+  _breakClip: {fileID: 8300000, guid: bb40e9cec50cdcb4f9a73fd4f6aac5b3, type: 3}

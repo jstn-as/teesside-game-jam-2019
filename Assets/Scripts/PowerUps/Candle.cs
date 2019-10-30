@@ -8,6 +8,13 @@ namespace PowerUps
     public class Candle : MonoBehaviour
     {
         [SerializeField] private GameObject _lightPrefab;
+        [SerializeField] private AudioClip _powerUpClip;
+        private SfxPlayer _sfxPlayer;
+
+        private void Start()
+        {
+            _sfxPlayer = FindObjectOfType<SfxPlayer>();
+        }
 
         public void LightUp()
         {
@@ -22,6 +29,7 @@ namespace PowerUps
         {
             if (other.CompareTag("Player"))
             {
+                _sfxPlayer.PlayAudio(_powerUpClip);
                 LightUp();
                 Destroy(gameObject);
             }

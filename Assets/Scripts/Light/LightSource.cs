@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using UnityEngine;
 using Random = UnityEngine.Random;
 
@@ -71,7 +72,14 @@ namespace Light
 
         private void OnDestroy()
         {
-            FindObjectOfType<ShadowCaster>().RemoveLight(this);
+            try
+            {
+                FindObjectOfType<ShadowCaster>().RemoveLight(this);
+            }
+            catch (NullReferenceException e)
+            {
+                Console.WriteLine(e);
+            }
         }
     }
 }

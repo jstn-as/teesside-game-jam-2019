@@ -1,20 +1,30 @@
-﻿using UnityEngine;
+﻿using System;
+using UnityEngine;
+using Random = UnityEngine.Random;
 
 public class Breakable : MonoBehaviour
 {
     [SerializeField, Range(0, 1)] private float _powerUpThreshold;
     [SerializeField] private GameObject[] _powerUps;
     [SerializeField] private GameObject _lightPrefab;
-    private Animator _animator;
+    [SerializeField] private AudioClip _breakClip;
     private static readonly int Explode1 = Animator.StringToHash("Explode");
+    private Animator _animator;
+    private SfxPlayer _sfxPlayer;
 
     private void Awake()
     {
         _animator = GetComponent<Animator>();
     }
 
+    private void Start()
+    {
+        _sfxPlayer = FindObjectOfType<SfxPlayer>();
+    }
+
     public void Explode()
     {
+        _sfxPlayer.PlayAudio(_breakClip);
         _animator.SetTrigger(Explode1);
         Instantiate(_lightPrefab, transform.position, Quaternion.identity);
     }

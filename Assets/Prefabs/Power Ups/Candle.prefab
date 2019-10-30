@@ -114,6 +114,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _lightPrefab: {fileID: 7432932584454325250, guid: 31dcce8cee73d41419c1321ba8ea64aa,
     type: 3}
+  _powerUpClip: {fileID: 8300000, guid: ee4abcc0b898cd04da3e59078ab2a513, type: 3}
 --- !u!1001 &6423986281457651559
 PrefabInstance:
   m_ObjectHideFlags: 0

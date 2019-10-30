@@ -342,6 +342,7 @@ MonoBehaviour:
   _actionKey: 101
   _flamePrefab: {fileID: 3503022815393648267, guid: a14dbfbc1dc8da949accfd894a70a0de,
     type: 3}
+  _castClip: {fileID: 8300000, guid: 215ef0630c66e494a8447420cc3f9355, type: 3}
 --- !u!114 &8916135803436142731
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -357,6 +358,8 @@ MonoBehaviour:
   _otherPlayer: 2
   _maxHealth: 3
   _currentHealth: 0
+  _hurtClip: {fileID: 8300000, guid: 7ab4933aaead8c1448105f3b98402cf2, type: 3}
+  _dieClip: {fileID: 8300000, guid: ad02cc56d34a4d544ac513ba091b109e, type: 3}
 --- !u!1 &6525301488384833341
 GameObject:
   m_ObjectHideFlags: 0
