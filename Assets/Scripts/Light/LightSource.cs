@@ -26,7 +26,7 @@ namespace Light
             var dropOff = _scaleChangeCurve.Evaluate(_layerCount);
             return _baseLight + _flicker + dropOff;
         } 
-        private void Awake()
+        private void Start()
         {
             _spriteMasks = new List<SpriteMask>();
             // Create the sprite masks.
@@ -44,7 +44,7 @@ namespace Light
                 spriteMask.backSortingOrder = 10 + i;
             }
             // Add itself to the light sources.
-            FindObjectOfType<ShadowCaster>().AddLight(this);
+            // FindObjectOfType<ShadowCaster>().AddLight(this);
         }
 
         private void Update()

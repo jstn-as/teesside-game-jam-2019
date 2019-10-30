@@ -9,8 +9,14 @@ public class SfxPlayer : MonoBehaviour
         _audioSource = GetComponent<AudioSource>();
     }
 
-    public void PlayAudio(AudioClip audioClip)
+    private void PlayClip(AudioClip audioClip)
     {
         _audioSource.PlayOneShot(audioClip);
+    }
+
+    public static void PlayAudio(AudioClip audioClip)
+    {
+        var sfxPlayer = FindObjectOfType<SfxPlayer>();
+        sfxPlayer.PlayClip(audioClip);
     }
 }

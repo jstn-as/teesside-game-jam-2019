@@ -10,21 +10,15 @@ public class Breakable : MonoBehaviour
     [SerializeField] private AudioClip _breakClip;
     private static readonly int Explode1 = Animator.StringToHash("Explode");
     private Animator _animator;
-    private SfxPlayer _sfxPlayer;
 
     private void Awake()
     {
         _animator = GetComponent<Animator>();
     }
 
-    private void Start()
-    {
-        _sfxPlayer = FindObjectOfType<SfxPlayer>();
-    }
-
     public void Explode()
     {
-        _sfxPlayer.PlayAudio(_breakClip);
+        SfxPlayer.PlayAudio(_breakClip);
         _animator.SetTrigger(Explode1);
         Instantiate(_lightPrefab, transform.position, Quaternion.identity);
     }

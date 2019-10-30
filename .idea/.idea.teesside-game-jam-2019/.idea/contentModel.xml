@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ContentModelStore">
     <e p="C:\Users\w9090803\.Rider2019.2\system\extResources" t="IncludeRecursive" />
-    <e p="C:\Users\w9090803\.Rider2019.2\system\resharper-host\local\Transient\ReSharperHost\v192\SolutionCaches\_teesside-game-jam-2019.-682244946.00" t="ExcludeRecursive" />
-    <e p="C:\Users\w9090803\Documents\GitHub\teesside-game-jam-2019" t="IncludeRecursive">
+    <e p="C:\Users\w9090803\.Rider2019.2\system\resharper-host\local\Transient\ReSharperHost\v192\SolutionCaches\_teesside-game-jam-2019.-232035644.00" t="ExcludeRecursive" />
+    <e p="C:\Users\w9090803\Documents\GitHub\Game Jam\teesside-game-jam-2019" t="IncludeRecursive">
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
         <e p="Materials" t="Include">
@@ -22,8 +22,10 @@
             <e p="LightableObject.cs" t="Include" />
             <e p="LightSource.cs" t="Include" />
             <e p="LineGenerator.cs" t="Include" />
+            <e p="ShadowBlockPoints.cs" t="Include" />
             <e p="ShadowCaster.cs" t="Include" />
             <e p="Shadows.cs" t="Include" />
+            <e p="SourceShadowCaster.cs" t="Include" />
             <e p="Wall.cs" t="Include" />
           </e>
           <e p="LineConnector.cs" t="Include" />

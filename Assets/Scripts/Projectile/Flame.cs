@@ -58,7 +58,7 @@ namespace Projectile
             }
             _transformShake.SetShakeTime(_shakeTime);
             _animator.SetTrigger(Explode);
-            _sfxPlayer.PlayAudio(_explodeClip);
+            SfxPlayer.PlayAudio(_explodeClip);
             // Destroy(gameObject, _destroyPause);
         }
 

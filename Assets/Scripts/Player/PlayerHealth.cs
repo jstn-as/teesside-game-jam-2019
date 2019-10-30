@@ -11,7 +11,6 @@ namespace Player
         [SerializeField] private int _currentHealth;
         [SerializeField] private AudioClip _hurtClip;
         [SerializeField] private AudioClip _dieClip;
-        private SfxPlayer _sfxPlayer;
 
         public int GetCurrentHealth()
         {
@@ -21,24 +20,18 @@ namespace Player
         {
             _currentHealth = _maxHealth;
         }
-
-        private void Start()
-        {
-            _sfxPlayer = FindObjectOfType<SfxPlayer>();
-        }
-
         public void ChangeHealth(int amount)
         {
             _currentHealth += amount;
             _currentHealth = Mathf.Clamp(_currentHealth, 0, _maxHealth);
             if (_currentHealth <= 0)
             {
-                _sfxPlayer.PlayAudio(_dieClip);
+                SfxPlayer.PlayAudio(_dieClip);
                 Die();
             }
             else if (amount < 0)
             {
-                _sfxPlayer.PlayAudio(_hurtClip);
+                SfxPlayer.PlayAudio(_hurtClip);
             }
         }
 

@@ -37,12 +37,14 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/TransformShake.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Ui/WinnerDisplay.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Ui/MenuManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Light/SourceShadowCaster.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Ui/HealthDisplay.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Light/Direction.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Light/Wall.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Light/Shadows.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Light/DarknessLayers.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Light/LineGenerator.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Light/ShadowBlockPoints.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Light/LightSource.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Light/LightableObject.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Light/ShadowCaster.cs" root0="FORCE_HIGHLIGHTING" />
@@ -54,7 +56,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Assets/Scripts/Player/CollisionManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Player/PlayerAnimation.cs" />
         <option value="$PROJECT_DIR$/Assets/Materials/Shaders/Sprites-Default.shader" />
         <option value="$PROJECT_DIR$/Assets/Materials/Shaders/PaletteSwap.shader" />
@@ -96,14 +97,16 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Intersection.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Light/LineGenerator.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Light/ShadowCaster.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Light/LightSource.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/SfxPlayer.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Projectile/Flame.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Player/PlayerAction.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Player/PlayerHealth.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Breakable.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/PowerUps/Potion.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/PowerUps/Candle.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/SfxPlayer.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Player/PlayerAction.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/PowerUps/Potion.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Light/ShadowBlockPoints.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Light/LightSource.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Light/SourceShadowCaster.cs" />
       </list>
     </option>
   </component>
@@ -160,6 +163,8 @@
       <workItem from="1572271614881" duration="21148000" />
       <workItem from="1572444650869" duration="3918000" />
       <workItem from="1572449607945" duration="4000" />
+      <workItem from="1572450012282" duration="17000" />
+      <workItem from="1572450053378" duration="6036000" />
     </task>
     <servers />
   </component>

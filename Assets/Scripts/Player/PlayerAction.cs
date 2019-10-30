@@ -57,7 +57,7 @@ namespace Player
                 }
             }
             // Spawn the flame.
-            _sfxPlayer.PlayAudio(_castClip);
+            SfxPlayer.PlayAudio(_castClip);
             _ammo--;
             _timeSinceAction = 0;
             var flame = Instantiate(_flamePrefab, spawnPos, Quaternion.identity);
